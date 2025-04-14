@@ -2,6 +2,7 @@ export enum ErrorEntity {
   SITEMAP_NOT_FOUND = "sitemap/not-found",
   SITEMAP_INVALID = "sitemap/invalid",
   SITEMAP_ERROR = "sitemap/error",
+  RATE_LIMIT_EXCEEDED = "rate-limit/exceeded",
   CREDENTIALS_NOT_FOUND = "credentials/not-found",
   WEBSITE_SEARCH_CONSOLE_DOMAIN_IS_NULL = "website/search-console-domain/is-null",
   GOOGLE_CLOUD_API_KEY_BAD_FORMED = "google/cloud/api-key/bad_formed",
