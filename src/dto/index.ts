@@ -1,1 +1,5 @@
-export * from "./sitemap/sitemap-checker-tool-run";
+import { SitemapResponse } from "../entities/sitemap.entity";
+
+export type responses = {
+  ["POST /sitemap/run"]: SitemapResponse;
+};

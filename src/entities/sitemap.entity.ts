@@ -27,13 +27,10 @@ export type SitemapLogsEntity = {
 export type SitemapResponse = {
   type: "sitemap-index" | "sitemap" | "folder" | "page";
   url: string;
-
   status_code?: number;
   updated_at?: Date;
   priority?: number;
-
   sitemap_parent_url: string | null;
   number_total_of_pages: number;
-
   children: Array<SitemapResponse>;
 };
