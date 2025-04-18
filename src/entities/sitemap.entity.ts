@@ -34,3 +34,10 @@ export type SitemapResponse = {
   number_total_of_pages: number;
   children: Array<SitemapResponse>;
 };
+
+export type SitemapPageEntity = {
+  url: string;
+  updated_at?: Date;
+  priority?: number;
+  sitemap_parent_url: string | null;
+};
