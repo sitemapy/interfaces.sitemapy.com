@@ -1,5 +1,6 @@
-import { SitemapResponse } from "../entities/sitemap.entity";
+import { SitemapPageEntity, SitemapResponse } from "../entities/sitemap.entity";
 
 export type ApiResponses = {
-  ["POST /sitemap/run"]: SitemapResponse;
+  ["POST /sitemap/crawl/with-tree"]: SitemapResponse;
+  ["POST /sitemap/crawl/only-pages"]: SitemapPageEntity[];
 };
