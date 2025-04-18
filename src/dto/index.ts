@@ -1,5 +1,5 @@
 import { SitemapResponse } from "../entities/sitemap.entity";
 
-export type responses = {
+export type ApiResponses = {
   ["POST /sitemap/run"]: SitemapResponse;
 };
