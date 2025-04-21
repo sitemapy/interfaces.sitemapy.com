@@ -1,0 +1,27 @@
+export type ApiLogEntity = {
+  id: string;
+  api_key_id: string;
+  organization_id: string;
+
+  url: string;
+  number_of_sitemap_fetched: number;
+  total_pages_in_sitemaps: number;
+  fetching_duration: number;
+  status: "success" | "error";
+  error_message: string | null;
+  created_at: Date;
+};
+
+export type ApiKeyEntity = {
+  id: string;
+  key: string;
+  organization_id: string;
+  updated_at: Date;
+  created_at: Date;
+};
+
+export type ApiKeyWithUsageEntity = ApiKeyEntity & {
+  current_usage: number;
+  max_usage: number;
+  reset_date: Date;
+};
