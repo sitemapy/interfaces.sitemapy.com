@@ -1,3 +1,5 @@
+import { SitemapResponse } from "./sitemap.entity";
+
 export type ApiLogEntity = {
   id: string;
   api_key_id: string;
@@ -17,6 +19,11 @@ export type ApiKeyEntity = {
   organization_id: string;
   updated_at: Date;
   created_at: Date;
+};
+
+export type ApiLogResponseEntity = {
+  api_log_id: string;
+  response: SitemapResponse[];
 };
 
 export type ApiKeyWithUsageEntity = ApiKeyEntity & {
