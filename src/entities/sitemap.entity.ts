@@ -32,6 +32,8 @@ export type SitemapResponse = {
   priority?: number;
   sitemap_parent_url: string | null;
   number_total_of_pages: number;
+  number_total_of_sitemaps: number;
+  fetching_duration: number;
   children: Array<SitemapResponse>;
 };
 
