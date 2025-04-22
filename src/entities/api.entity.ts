@@ -10,6 +10,7 @@ export type ApiLogEntity = {
   total_pages_in_sitemaps: number;
   fetching_duration: number;
   does_sitemap_contain_errors: boolean;
+  mode: "sitemap_tree" | "pages_only";
 
   created_at: Date;
 };
