@@ -8,4 +8,6 @@ export enum ErrorEntity {
   UNKNOWN_ERROR = "global/unknown-error",
   USER_NOT_FOUND = "user/not-found",
   USER_NOT_AUTHENTICATED = "user/not-authenticated",
+  USER_IS_NOT_ADMIN_OF_ORGANIZATION = "user/is-not-admin-of-organization",
+  USER_IS_NOT_MEMBER_OF_ORGANIZATION = "user/is-not-member-of-organization",
 }
