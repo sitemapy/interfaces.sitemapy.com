@@ -13,7 +13,6 @@ export type ApiLogEntity = {
 };
 
 export type ApiKeyEntity = {
-  id: string;
   key: string;
   organization_id: string;
   updated_at: Date;
