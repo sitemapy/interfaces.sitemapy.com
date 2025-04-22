@@ -34,6 +34,7 @@ export type SitemapResponse = {
   number_total_of_pages: number;
   number_total_of_sitemaps: number;
   fetching_duration: number;
+  does_sitemap_contain_errors: boolean;
   children: Array<SitemapResponse>;
 };
 
