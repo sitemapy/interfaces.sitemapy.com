@@ -36,5 +36,6 @@ export type ApiResponses = {
   ["POST /api/update_api_key"]: ApiKeyEntity;
   ["POST /api/get_api_key_usage"]: ApiKeyWithUsageEntity;
   ["POST /api/fetch_sitemap"]: SitemapResponse;
+  ["POST /api/fetch_sitemap_with_only_pages"]: SitemapPageEntity[];
   ["POST /api/get_logs"]: ApiLogEntity[];
 };
