@@ -1,3 +1,8 @@
+import {
+  ApiKeyEntity,
+  ApiKeyWithUsageEntity,
+  ApiLogEntity,
+} from "../entities/api.entity";
 import { SitemapPageEntity, SitemapResponse } from "../entities/sitemap.entity";
 import { UserEntity } from "../entities/user.entity";
 export type ApiResponses = {
@@ -22,8 +27,14 @@ export type ApiResponses = {
   ["GET /auth/google/url"]: {
     url: string;
   };
-  ["GET /auth/google/callback"]: {
+  ["POST /auth/google/callback"]: {
     user: UserEntity;
     access_token: string;
   };
+
+  ["POST /api/get_api_key"]: ApiKeyEntity;
+  ["POST /api/update_api_key"]: ApiKeyEntity;
+  ["POST /api/get_api_key_usage"]: ApiKeyWithUsageEntity;
+  ["POST /api/fetch_sitemap"]: SitemapResponse;
+  ["POST /api/get_logs"]: ApiLogEntity[];
 };
