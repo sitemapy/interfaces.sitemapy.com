@@ -3,9 +3,11 @@ import {
   ApiKeyWithUsageEntity,
   ApiLogEntity,
 } from "../entities/api.entity";
+import { BillingEntity } from "../entities/billing.entity";
 import { OrganizationEntity } from "../entities/organization.entity";
 import { SitemapPageEntity, SitemapResponse } from "../entities/sitemap.entity";
 import { UserEntity } from "../entities/user.entity";
+
 export type ApiResponses = {
   ["POST /sitemap/crawl/with-tree"]: SitemapResponse;
   ["POST /sitemap/crawl/only-pages"]: SitemapPageEntity[];
@@ -42,4 +44,7 @@ export type ApiResponses = {
 
   ["GET /organizations"]: OrganizationEntity[];
   ["POST /organizations"]: OrganizationEntity;
+
+  ["GET /billing/get-billing-info"]: BillingEntity[];
+  ["POST /billing/cancel-subscription"]: BillingEntity;
 };
