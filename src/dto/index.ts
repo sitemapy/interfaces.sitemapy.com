@@ -40,6 +40,6 @@ export type ApiResponses = {
   ["POST /api/fetch_sitemap_with_only_pages"]: SitemapPageEntity[];
   ["POST /api/get_logs"]: ApiLogEntity[];
 
-  ["GET /organization"]: OrganizationEntity[];
-  ["POST /organization"]: OrganizationEntity;
+  ["GET /organizations"]: OrganizationEntity[];
+  ["POST /organizations"]: OrganizationEntity;
 };

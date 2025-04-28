@@ -11,6 +11,7 @@ export type ApiLogEntity = {
   fetching_duration: number;
   does_sitemap_contain_errors: boolean;
   mode: "sitemap_tree" | "pages_only" | "sitemap_tree_with_pages";
+  source: "api" | "web";
 
   created_at: Date;
 };
