@@ -45,6 +45,6 @@ export type ApiResponses = {
   ["GET /organizations"]: OrganizationEntity[];
   ["POST /organizations"]: OrganizationEntity;
 
-  ["GET /billing/get-billing-info"]: BillingEntity[];
+  ["GET /billing/get-billing-info"]: BillingEntity | null;
   ["POST /billing/cancel-subscription"]: BillingEntity;
 };
