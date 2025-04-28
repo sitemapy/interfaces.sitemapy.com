@@ -22,7 +22,6 @@ export type SitemapPageEntity = {
 export type SitemapLogEntity = {
   id: string;
   organization_id: string;
-
   url: string;
   number_of_sitemap_fetched: number;
   total_pages_in_sitemaps: number;
@@ -30,6 +29,5 @@ export type SitemapLogEntity = {
   does_sitemap_contain_errors: boolean;
   mode: "sitemap_tree" | "pages_only" | "sitemap_tree_with_pages";
   source: "api" | "web" | "cron";
-
   created_at: Date;
 };
