@@ -10,4 +10,5 @@ export enum ErrorEntity {
   USER_NOT_AUTHENTICATED = "user/not-authenticated",
   USER_IS_NOT_ADMIN_OF_ORGANIZATION = "user/is-not-admin-of-organization",
   USER_IS_NOT_MEMBER_OF_ORGANIZATION = "user/is-not-member-of-organization",
+  ORGANIZATION_NOT_FOUND = "organization/not-found",
 }
