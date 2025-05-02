@@ -11,4 +11,8 @@ export enum ErrorEntity {
   USER_IS_NOT_ADMIN_OF_ORGANIZATION = "user/is-not-admin-of-organization",
   USER_IS_NOT_MEMBER_OF_ORGANIZATION = "user/is-not-member-of-organization",
   ORGANIZATION_NOT_FOUND = "organization/not-found",
+  USER_HAS_NOT_ENOUGH_PLAN_TO_ACCESS_FEATURE = "user/has-not-enough-plan-to-access-feature",
+  IP_NOT_FROM_PADDLE = "ip-not-from-paddle",
+  ORGANIZATION_HAS_NOT_OWNER = "organization/has-not-owner",
+  BILLING_PLAN_NOT_FOUND = "billing-plan/not-found",
 }
