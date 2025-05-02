@@ -5,3 +5,4 @@ export * from "./sitemap.entity";
 export * from "./credential.entity";
 export * from "./api.entity";
 export * from "./billing.entity";
+export * from "./usage.entity";

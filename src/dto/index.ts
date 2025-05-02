@@ -1,4 +1,4 @@
-import { ApiKeyEntity, ApiKeyWithUsageEntity } from "../entities/api.entity";
+import { ApiKeyEntity } from "../entities/api.entity";
 import { BillingEntity } from "../entities/billing.entity";
 import { OrganizationEntity } from "../entities/organization.entity";
 import {
@@ -6,6 +6,7 @@ import {
   SitemapPageEntity,
   SitemapResponse,
 } from "../entities/sitemap.entity";
+import { UsageEntity } from "../entities/usage.entity";
 import { UserEntity } from "../entities/user.entity";
 
 export type ApiResponses = {
@@ -37,14 +38,18 @@ export type ApiResponses = {
 
   ["POST /api/get_api_key"]: ApiKeyEntity;
   ["POST /api/update_api_key"]: ApiKeyEntity;
-  ["POST /api/get_api_key_usage"]: ApiKeyWithUsageEntity;
   ["POST /api/fetch_sitemap"]: SitemapResponse;
   ["POST /api/fetch_sitemap_with_only_pages"]: SitemapPageEntity[];
-  ["POST /api/get_logs"]: SitemapLogEntity[];
 
   ["GET /organizations"]: OrganizationEntity[];
   ["POST /organizations"]: OrganizationEntity;
 
   ["GET /billing/get-billing-info"]: BillingEntity | null;
   ["POST /billing/cancel-subscription"]: BillingEntity;
+
+  ["POST /usage/get_logs"]: {
+    logs: SitemapLogEntity[];
+    total_logs: number;
+  };
+  ["POST /usage/get_usage"]: UsageEntity;
 };
