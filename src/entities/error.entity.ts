@@ -3,6 +3,7 @@ export enum ErrorEntity {
   SITEMAP_INVALID = "sitemap/invalid",
   SITEMAP_ERROR = "sitemap/error",
   RATE_LIMIT_EXCEEDED = "rate-limit/exceeded",
+  USAGE_LIMIT_EXCEEDED = "usage-limit/exceeded",
   API_KEY_NOT_FOUND = "api-key/not-found",
   CREDENTIALS_NOT_FOUND = "credentials/not-found",
   UNKNOWN_ERROR = "global/unknown-error",
