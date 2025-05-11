@@ -16,4 +16,5 @@ export enum ErrorEntity {
   IP_NOT_FROM_PADDLE = "ip-not-from-paddle",
   ORGANIZATION_HAS_NOT_OWNER = "organization/has-not-owner",
   BILLING_PLAN_NOT_FOUND = "billing-plan/not-found",
+  FORGOT_PASSWORD_INVALID_TOKEN = "forgot-password/invalid-token",
 }

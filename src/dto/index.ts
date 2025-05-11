@@ -28,7 +28,7 @@ export type ApiResponses = {
   ["GET /auth/me"]: {
     user: UserEntity;
   };
-  ["GET /auth/google/url"]: {
+  ["POST /auth/google/url"]: {
     url: string;
   };
   ["POST /auth/google/callback"]: {
@@ -52,4 +52,8 @@ export type ApiResponses = {
     total_logs: number;
   };
   ["POST /usage/get_usage"]: UsageEntity;
+
+  ["POST /auth/forgot-password"]: {};
+
+  ["POST /auth/reset-password"]: {};
 };
